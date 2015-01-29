@@ -1,0 +1,19 @@
+	<span>
+		<span id="{{data.name}}" 
+					ng-click="changeStatus($event)" 
+					ng-if="data.nodes.length != 0" 
+					class="glyphicon glyphicon-chevron-down showBtn">
+		</span>
+		{{data.name}}
+	</span>
+	<span ng-click="add(data)" class="glyphicon glyphicon-plus add"></span>
+	<span ng-click="delete(data)" 
+	   class="glyphicon glyphicon-remove delete">
+	</span>
+	<div id="{{data.name}}-div" class="hide">
+		<ul>
+			<li ng-repeat="data in data.nodes" 
+				ng-include="'partials/directives/treeview_renderer.html'">
+			</li>
+		</ul>
+	</div>
