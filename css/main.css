@@ -29,3 +29,11 @@ li {
 .hide {
 	display: none;
 }
+
+.control-btn {
+	cursor: pointer;
+}
+
+.control-btn:hover {
+	color: black;
+};

@@ -5,6 +5,7 @@ angular.module('TreeViewApp.controllers', [])
   	$scope.delete = function(data) {
   		if(data.nodes.length > 0) {
       	data.nodes = [];
+        deleteBfs($scope.tree[0], data.name);
   		}
   		else {
   			deleteBfs($scope.tree[0], data.name);

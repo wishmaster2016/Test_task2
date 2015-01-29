@@ -6,7 +6,6 @@ angular.module('TreeViewApp.directives', [])
       restrict: 'E',
       templateUrl: 'partials/directives/treeview.html',
       link: function($scope, elm) {
-        console.log("directive loaded");
       }
     }
   }]);
